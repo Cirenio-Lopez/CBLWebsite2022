@@ -1,14 +1,19 @@
-import MainSVG from "../svg/main.svg";
+import WorksSVG from "../svg/works.svg";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-function Index(props) {
+import Link from "next/link";
+function Works(props) {
   const [active, setActive] = useState(false);
   const router = useRouter();
   useEffect(() => {
-    props.currentPage(1);
+    props.currentPage(2);
     setActive(props.active);
     if (props.scrollDir === "down") {
-      router.push("/works");
+      router.push("./about/");
+      props.handleScroll("none");
+    }
+    if (props.scrollDir === "up") {
+      router.push("/");
       props.handleScroll("none");
     }
   }, [props, router]);
@@ -22,34 +27,37 @@ function Index(props) {
             }`}
           >
             <span className="text-5xl md:text-9xl">
-              CIRENIO
+              Works &
               <br />
-              LOPEZ
+              Projects
             </span>
             <div className="pt-2 md:pt-0">
               <span className="block w-[50px] h-[2px] md:w-[150px] md:h-1 rounded-[5px] bg-[#ff4d5a] my-2 md:my-[1rem]"></span>
               <span className="block w-[50px] h-[2px] md:w-[150px] md:h-1 rounded-[5px] bg-[#ff4d5a] ml-[24px] md:ml-[54px] mb-4"></span>
             </div>
             <p className="pt-2 md:text-3xl tracking-[.1em] md:leading-normal">
-              web developer / <br /> software engineer.
+              Future projects & / <br /> software progress will <br /> displayed
+              here. Follow my progress on my Github.
             </p>
+            <div className="translate-y-0 translate-z-0 mt-12 ease-in">
+              <Link href="https://github.com/Cirenio-Lopez">
+                <a>
+                  <button className="inline-block text-[1.4rem] bg-[#ff4d5a] leading-none tracking-widest font-bold py-[18px] px-[32px] rounded-[50px] ease-in duration-400 hover:-translate-y-3">
+                    Github
+                  </button>
+                </a>
+              </Link>
+            </div>
           </div>
         </div>
         <div
-          className={`overflow-x-hidden absolute top-20 md:bottom-0 md:left-[29.5%] m-auto flex items-center justify-center transition duration-400 ${
+          className={` overflow-hidden absolute top-20 md:bottom-0 md:left-[29.5%] m-auto flex items-center justify-center transition duration-400 ${
             active ? "slide-in-right" : "translate3d-x-full"
           }`}
         >
-          <MainSVG />
+          <WorksSVG />
         </div>
       </div>
-      <p
-        className={`transition duration-400 fixed text-[1rem] bottom-[80px] left-[20px] leading-none tracking-[.25em] writing-mode z-20 font-light after:w-[2px] after:h-[64px] after:bg-white after:absolute after:left-0 after:right-0 after:m-auto after:-bottom-[80px] ${
-          active ? "translate-y-0 slide-in-up" : "translate-y-[180%]"
-        }`}
-      >
-        SCROLL DOWN
-      </p>
     </>
   );
 }
@@ -62,4 +70,4 @@ export async function getServerSideProps() {
   return { props: {} };
 }
 
-export default Index;
+export default Works;
