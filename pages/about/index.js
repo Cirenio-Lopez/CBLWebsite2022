@@ -25,8 +25,8 @@ function About(props) {
   return (
     <>
       <div
-        className={`z-10 h-screen w-screen ${
-          more.current ? "" : "overflow-hidden"
+        className={`z-10 w-screen ${
+          more.current ? "h-screen" : "overflow-hidden fixed bottom-0 top-0"
         }`}
       >
         <div className="ml-[15%] absolute bottom-24 md:bottom-[29%] z-10 overflow-hidden">

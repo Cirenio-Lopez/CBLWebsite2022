@@ -24,7 +24,7 @@ function Contact(props) {
   }, [props, router]);
   return (
     <>
-      <div className="z-10 h-screen w-screen overflow-hidden">
+      <div className="z-10  fixed bottom-0 top-0 w-screen overflow-hidden">
         <div className="ml-[15%] absolute bottom-24 md:bottom-[29%] z-10 overflow-x-hidden">
           <div
             className={`transition duration-400 ${
