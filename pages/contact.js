@@ -69,12 +69,14 @@ function Contact(props) {
             </span>
           </div>
         </div>
-        <div
-          className={`absolute top-20 md:bottom-0 md:left-[29.5%] m-auto flex items-center justify-center transition duration-400 ${
-            active ? "slide-in-right" : "translate3d-x-full"
-          }`}
-        >
-          <MainSVG />
+        <div className="overflow-x-hidden absolute top-20 md:bottom-0 md:right-0 m-auto items-end flex justify-end">
+          <div
+            className={`transition duration-400 w-screen md:w-auto md:h-screen h-auto ${
+              active ? "slide-in-right" : "translate3d-x-full"
+            }`}
+          >
+            <MainSVG />
+          </div>
         </div>
       </div>
     </>

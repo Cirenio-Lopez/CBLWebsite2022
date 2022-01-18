@@ -63,7 +63,7 @@ function MyApp({ Component, pageProps }) {
         ></meta>
       </Head>
       <div
-        className="px-0 mx-auto sm:px-6 xl:px-0 main-active"
+        className="px-0 mx-auto sm:px-6 xl:px-0 main-active overflow-hidden"
         onWheel={scrollPage}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}

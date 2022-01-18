@@ -25,7 +25,7 @@ function About(props) {
   return (
     <>
       <div className={`z-10 ${more.current ? "h-screen w-screen" : ""}`}>
-        <div className="ml-[11%] absolute bottom-44 md:bottom-[29%] z-10 overflow-x-hidden">
+        <div className="ml-[11%] absolute bottom-44 md:bottom-[29%] z-10 overflow-hidden">
           <div
             className={` transition duration-400 ${
               active ? "slide-in-left" : "-translate3d-x-full"
@@ -55,12 +55,14 @@ function About(props) {
             </div>
           </div>
         </div>
-        <div
-          className={`absolute top-20 md:bottom-0 md:left-[29.5%] m-auto flex items-center justify-center transition duration-400 ${
-            active ? "slide-in-right" : "translate3d-x-full"
-          }`}
-        >
-          <CirenioSVG />
+        <div className="overflow-x-hidden absolute top-20 md:bottom-0 md:right-0 m-auto items-end flex justify-end">
+          <div
+            className={`transition duration-400 w-screen md:w-auto md:h-screen h-auto ${
+              active ? "slide-in-right" : "translate3d-x-full"
+            }`}
+          >
+            <CirenioSVG />
+          </div>
         </div>
       </div>
     </>
