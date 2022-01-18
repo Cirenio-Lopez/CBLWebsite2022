@@ -29,7 +29,7 @@ function About(props) {
           more.current ? "" : "overflow-hidden"
         }`}
       >
-        <div className="ml-[11%] absolute bottom-44 md:bottom-[29%] z-10 overflow-hidden">
+        <div className="ml-[15%] absolute bottom-24 md:bottom-[29%] z-10 overflow-hidden">
           <div
             className={` transition duration-400 ${
               active ? "slide-in-left" : "-translate3d-x-full"
@@ -45,7 +45,7 @@ function About(props) {
               <br /> and Traveling.
             </p>
             <div
-              className={`translate-y-0 translate-z-0 mt-12 ease-in ${
+              className={`translate-y-0 translate-z-0 mt-6 ease-in ${
                 more.current ? "hidden" : ""
               }`}
             >

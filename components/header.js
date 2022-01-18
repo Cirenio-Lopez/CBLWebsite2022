@@ -12,7 +12,7 @@ function Header() {
   const [show, setShow] = useState();
   library.add(faTwitter, faGithub, faLinkedin, faInstagram);
   return (
-    <header className="flex items-center justify-between p-10 z-30 fixed w-full right-1">
+    <header className="flex items-center justify-between p-10 z-30 fixed w-full right-1 overflow-hidden">
       <div className="z-30">
         <Link aria-label="Cirenio Lopez" href="/" passHref={true}>
           <div className="flex items-center justify-between">

@@ -78,6 +78,11 @@ function Background() {
     handleResize();
     window.addEventListener("resize", handleResize);
   }, []);
-  return <canvas ref={canvasRef} className="fixed top-0 z-0"></canvas>;
+  return (
+    <canvas
+      ref={canvasRef}
+      className="fixed top-0 z-0 overflow-hidden"
+    ></canvas>
+  );
 }
 export default Background;

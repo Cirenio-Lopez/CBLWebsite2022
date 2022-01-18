@@ -25,7 +25,7 @@ function Contact(props) {
   return (
     <>
       <div className="z-10 h-screen w-screen overflow-hidden">
-        <div className="ml-[11%] absolute bottom-44 md:bottom-[29%] z-10 overflow-x-hidden">
+        <div className="ml-[15%] absolute bottom-24 md:bottom-[29%] z-10 overflow-x-hidden">
           <div
             className={`transition duration-400 ${
               active ? "slide-in-left" : "-translate3d-x-full"
@@ -41,7 +41,7 @@ function Contact(props) {
                 <a>cireniobrylopez@gmail.com</a>
               </Link>
               <br />
-              <div className="flex text-5xl md:text-7xl pt-14 flex-wrap justify-center">
+              <div className="flex text-4xl md:text-7xl pt-14 flex-wrap justify-center">
                 <Link href="https://github.com/Cirenio-Lopez">
                   <a>
                     <FontAwesomeIcon icon={["fab", "github"]} />
