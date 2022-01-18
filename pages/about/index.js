@@ -24,7 +24,11 @@ function About(props) {
   }, [props, router, more]);
   return (
     <>
-      <div className={`z-10 ${more.current ? "h-screen w-screen" : ""}`}>
+      <div
+        className={`z-10 h-screen w-screen ${
+          more.current ? "" : "overflow-hidden"
+        }`}
+      >
         <div className="ml-[11%] absolute bottom-44 md:bottom-[29%] z-10 overflow-hidden">
           <div
             className={` transition duration-400 ${
