@@ -98,11 +98,12 @@ function Projects() {
           <div className="static-content">
             <h2>CONCEPT</h2>
             <div className="static-p">
-              I won't lie, I have taken huge inspiration from{" "}
+              I won&apos;t lie, I have taken huge inspiration from{" "}
               <a
                 href="https://www.kuon.space/"
                 className="text-[#ff4d5a] underline"
                 target="_blank"
+                rel="nonreferrer"
               >
                 Kuon Yagi
               </a>{" "}
