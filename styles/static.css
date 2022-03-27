@@ -1,0 +1,377 @@
+.static-cover {
+  height: 100vh;
+  position: relative;
+}
+
+.static-overview {
+  background-color: #f2f4f5;
+  padding-bottom: 12rem;
+  position: relative;
+  z-index: 20;
+  display: block;
+  font-family: inherit;
+  color: #1f2021;
+}
+.static-description {
+  padding-top: 4rem;
+  position: relative;
+}
+.static-description .content {
+  width: 100%;
+  margin: auto;
+}
+
+.static-description .content ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  list-style: none;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.static-description .content ul li {
+  margin-right: 0;
+  margin-bottom: 1rem;
+  list-style-type: none;
+  line-height: 1.5;
+}
+
+.static-description .content ul li .title {
+  margin-bottom: 0.2rem;
+  font-size: 1.75rem;
+  color: #072142;
+  letter-spacing: 0.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.static-description .content ul li .description {
+  line-height: 2;
+  word-wrap: break-word;
+  white-space: normal;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.static-description .content-img {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.static-development {
+  padding-top: 4rem;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.static-development .static-number {
+  position: absolute;
+  left: 0;
+  padding-left: 2rem;
+  font-size: 2rem;
+  color: #ff4d5a;
+  padding-right: 2rem;
+  font-weight: 600;
+}
+
+.static-development .static-number::after {
+  content: "";
+  height: 2px;
+  width: 1.5rem;
+  background-color: #020b16;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.static-development .static-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10%;
+  box-sizing: content-box;
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+  flex-direction: column;
+  padding-left: 10%;
+}
+
+.static-development .static-content h2 {
+  font-size: 1.75rem;
+  padding-top: 0.15rem;
+  padding-left: 2rem;
+  margin: 0;
+  color: #072142;
+  letter-spacing: 0.2em;
+  font-family: inherit;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.static-development .static-content .static-p {
+  margin-top: 2rem;
+  width: 100%;
+  line-height: 2;
+  word-wrap: break-word;
+  white-space: normal;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.static-development .static-content .static-p .static-title {
+  font-size: 1.5rem;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #020b16;
+  text-align: center;
+}
+
+.static-development .static-content .static-p img {
+  padding-top: 2rem;
+  width: 100%;
+}
+
+.static-development .static-content .static-p a {
+  color: #ff4d5a;
+}
+.static-development .static-content .icons {
+  display: inline-flex;
+  font-size: 4rem;
+  width: 100%;
+}
+.static-development .static-content .icons-special {
+  display: inline-flex;
+  font-size: 4rem;
+  width: 100%;
+}
+
+.static-development .static-content .static-p-i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.static-development .static-content .static-p-i .skill-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  width: 50%;
+}
+
+.static-development .static-content .static-p-i .skill-icons p {
+  padding-left: 20px;
+}
+
+.static-development .static-content .static-p-i .skill-icons img {
+  width: 50px;
+  padding: 0;
+}
+
+.static-development .static-content .icons svg {
+  width: 100%;
+}
+
+.static-development .static-content .social-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.static-development .static-content .static-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.static-development .static-content .static-social .static-social-title {
+  padding-top: 20px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.static-development .static-content .static-social .static-social-title h3 {
+  padding: 0 20px;
+  margin: 0;
+  line-height: 1;
+}
+
+.static-development .static-content .static-social .static-social-wrapper {
+  padding-top: 20px;
+}
+
+.static-development .static-content .static-social .insta {
+  width: 100%;
+  height: 200px;
+}
+
+.static-return {
+  text-align: center;
+  /* padding: 0 10%; */
+  margin-top: 4rem;
+  width: 100%;
+}
+.static-return a {
+  font-size: 1.65rem;
+  display: inline-block;
+  color: #020b16;
+  letter-spacing: 0.2rem;
+  position: relative;
+}
+
+.static-return a::before {
+  content: "";
+  height: 2px;
+  width: 28px;
+  background-color: #020b16;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -44px;
+  margin: auto;
+}
+
+@media (min-width: 640px) {
+  .static-description .content {
+    padding: 0 8.58333% 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .static-description .content ul {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0rem;
+  }
+
+  .static-description .content ul li {
+    margin-right: 6.4rem;
+    list-style-type: none;
+  }
+
+  .static-description .content-img {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .static-development {
+    padding-top: 10rem;
+    padding-left: 138px;
+  }
+
+  .static-development .static-number {
+    padding-left: 6.5rem;
+    font-size: 2.5rem;
+    padding-right: 4rem;
+  }
+
+  .static-development .static-number::after {
+    width: 4.8rem;
+  }
+
+  .static-development .static-content {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    padding-right: 10%;
+  }
+  .static-development .static-content .static-p-container {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .static-development .static-content .static-p-container .static-p {
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+
+  .static-development .static-content h2 {
+    padding-top: 0;
+    font-size: 2.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin: 0;
+    width: 600px;
+  }
+  .static-development .static-content .static-p {
+    margin-top: 0;
+    width: 65%;
+    right: 0;
+    font-size: 1.125rem;
+    position: relative;
+  }
+
+  .static-development .static-content .static-p .static-title {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+  }
+  .static-development .static-content .static-p img {
+    width: auto;
+    max-width: 80%;
+    display: block;
+  }
+  .static-development .static-content .icons-special svg {
+    width: auto;
+  }
+  .static-return {
+    margin-top: 8rem;
+  }
+  .static-return a {
+    font-size: 2.5rem;
+  }
+
+  .static-return a::before {
+    content: "";
+    height: 3px;
+    width: 48px;
+    background-color: #020b16;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -60px;
+    margin: auto;
+  }
+  .static-development .static-content .static-p-i {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .static-development .static-content .static-p-i .skill-icons {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    font-size: 2rem;
+    width: 50%;
+  }
+  .static-development .static-content .social-wrapper {
+    width: 65%;
+  }
+  .static-development .static-content .static-social .static-social-wrapper {
+    width: 100%;
+  }
+  .static-development .static-content .static-social {
+    width: 100%;
+  }
+  .static-development .static-content .static-social .insta {
+    height: 28vw;
+  }
+}
