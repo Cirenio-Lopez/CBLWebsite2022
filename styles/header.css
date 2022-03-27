@@ -170,6 +170,7 @@ nav {
   z-index: 10;
   font-size: 3rem;
   transition: 0.5s;
+  overflow: hidden;
 }
 .nav-hidden {
   transform: translateY(-100%);
