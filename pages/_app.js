@@ -13,6 +13,15 @@ function MyApp({ Component, pageProps }) {
   const [scrollDir, setScrollDir] = useState("none");
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
+  const [height, setHeight] = useState({ height: "" });
+
+  useEffect(() => {
+    function resetHeight() {
+      setHeight(window.innerHeight + "px!important");
+    }
+    window.addEventListener("resize", resetHeight);
+    resetHeight();
+  }, []);
 
   function scrollPage(e) {
     if (e.nativeEvent.wheelDelta > 0) {
@@ -107,7 +116,7 @@ function MyApp({ Component, pageProps }) {
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        <div className="app">
+        <div className="app" style={{ height: height.height }}>
           <Background />
           <Header location={router.pathname} />
 
