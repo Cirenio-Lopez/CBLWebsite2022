@@ -13,11 +13,12 @@ function MyApp({ Component, pageProps }) {
   const [scrollDir, setScrollDir] = useState("none");
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
-  const [height, setHeight] = useState({ height: "" });
+  const [height, setHeight] = useState("100%");
 
   useEffect(() => {
     function resetHeight() {
-      setHeight(window.innerHeight + "px!important");
+      setHeight(window.innerHeight);
+      console.log(height);
     }
     window.addEventListener("resize", resetHeight);
     resetHeight();
@@ -116,7 +117,7 @@ function MyApp({ Component, pageProps }) {
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        <div className="app" style={{ height: height.height }}>
+        <div className="app" style={{ height: height }}>
           <Background />
           <Header location={router.pathname} />
 
