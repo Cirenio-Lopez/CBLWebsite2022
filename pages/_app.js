@@ -107,16 +107,17 @@ function MyApp({ Component, pageProps }) {
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        <Background />
-        <Header location={router.pathname} />
-
-        <motion.div
-          className="load-in"
-          initial={{ y: 0 }}
-          animate={{ y: "-100vh" }}
-          transition={{ duration: 0.75 }}
-        ></motion.div>
         <div className="app">
+          <Background />
+          <Header location={router.pathname} />
+
+          <motion.div
+            className="load-in"
+            initial={{ y: 0 }}
+            animate={{ y: "-100vh" }}
+            transition={{ duration: 0.75 }}
+          ></motion.div>
+
           <AnimatePresence exitBeforeEnter>
             <Component
               {...pageProps}
