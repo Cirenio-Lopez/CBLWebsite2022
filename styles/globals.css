@@ -73,6 +73,7 @@ canvas {
 
 .fullPage_slide .text-wrap {
   margin: 0 13%;
+  width: 87.5%;
   top: auto;
   bottom: 7rem;
   position: absolute;
@@ -235,7 +236,6 @@ canvas {
     overflow: hidden;
     margin-left: 11%;
     bottom: auto;
-    width: 87.5%;
   }
 
   .fullPage_slide .text-wrap .title {
