@@ -18,7 +18,6 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     function resetHeight() {
       setHeight(window.innerHeight);
-      console.log(height);
     }
     window.addEventListener("resize", resetHeight);
     resetHeight();

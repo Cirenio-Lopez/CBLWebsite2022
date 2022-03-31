@@ -1,6 +1,12 @@
 .static-cover {
-  height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
   position: relative;
+}
+
+.static-cover .fullPage_slide .image-wrap {
+  height: 100%;
+  top: 0;
 }
 
 .static-overview {
@@ -152,6 +158,7 @@
   display: inline-flex;
   font-size: 4rem;
   width: 100%;
+  justify-content: center;
 }
 
 .static-development .static-content .static-p-i {
@@ -244,6 +251,11 @@
 }
 
 @media (min-width: 640px) {
+  .static-cover .fullPage_slide .image-wrap {
+    height: 100%;
+    top: 10rem;
+  }
+
   .static-description .content {
     padding: 0 8.58333% 0;
     max-width: 1200px;
@@ -262,6 +274,14 @@
     list-style-type: none;
   }
 
+  .static-description .content ul li .title {
+    font-size: 2rem;
+  }
+
+  .static-description .content ul li .description {
+    font-size: 1.5rem;
+  }
+
   .static-description .content-img {
     max-width: 1200px;
     margin: auto;
@@ -274,7 +294,7 @@
 
   .static-development .static-number {
     padding-left: 6.5rem;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     padding-right: 4rem;
   }
 
@@ -298,11 +318,12 @@
   .static-development .static-content .static-p-container .static-p {
     width: 100%;
     padding-bottom: 4rem;
+    /* font-size: 1rem; */
   }
 
   .static-development .static-content h2 {
     padding-top: 0;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     padding-left: 4rem;
     padding-right: 4rem;
     margin: 0;
@@ -312,8 +333,12 @@
     margin-top: 0;
     width: 65%;
     right: 0;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     position: relative;
+  }
+
+  .static-development .static-content .static-p .icons {
+    margin-top: 2rem;
   }
 
   .static-development .static-content .static-p .static-title {
@@ -326,6 +351,9 @@
     width: auto;
     max-width: 80%;
     display: block;
+  }
+  .static-development .static-content .icons-special {
+    justify-content: start;
   }
   .static-development .static-content .icons-special svg {
     width: auto;
@@ -359,7 +387,7 @@
     display: flex;
     justify-content: center;
     align-items: left;
-    font-size: 2rem;
+    font-size: 2.25rem;
     width: 50%;
   }
   .static-development .static-content .social-wrapper {
