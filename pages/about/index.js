@@ -60,7 +60,7 @@ export default function Index(props) {
             </a>
           </motion.div>
         </div>
-        <div className="image-wrap">
+        <div className="image-wrap image-wrap-about">
           <MouseParallax
             clientX={clientX}
             clientY={clientY}

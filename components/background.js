@@ -31,7 +31,7 @@ function Background() {
     var WIDTH;
     var HEIGHT;
     var stars = [];
-    var initStarPopulation = 100;
+    var initStarPopulation = 50;
     var params = { backgroundSpeed: 50 };
     var animationFrame;
     setCanvasSize();
