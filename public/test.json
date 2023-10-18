@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "email": "example@smu.edu",
+      "password": "password",
+      "savePassword": false,
+      "UUID": "abc123",
+      "registration_complete": true,
+      "firstName": "John",
+      "lastName": "Smith",
+      "nickName": "Jack",
+      "DoB": 1980-01-01T06:00:00.000Z,
+      "gender": "M",
+      "graduatingYear": "2023",
+      "major": "Computer Science",
+      "pronouns": "He/Him/His"
+      "intensity": 75,
+      "workoutLength": "2"
+      "activities": ["Weightlifting", "Field Sports", "Swimming", "Tennis", "Rock Climbing", "Rowing"],
+      "socialMedia": {"FB": "https://www.facebook.com/profile.php?id=0", "IG": "@JohnSmith", "SNP": "JohnSmith", "X": "@JohnSmith"},
+      "profilePicture": "file:///file.jpg"
+      "additionalPics": ["file:///files.jpg", "", "", "", "", ""],
+      "onboarding_complete": true,
+      "roles": [
+        "admin",
+        "user"
+      ],
+      "preferences": {
+        "language": "en",
+        "notifications": false
+      }
+    },
+  ]
+}
