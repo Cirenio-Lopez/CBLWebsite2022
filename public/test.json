@@ -9,7 +9,7 @@
       "firstName": "John",
       "lastName": "Smith",
       "nickName": "Jack",
-      "DoB": 1980-01-01T06:00:00.000Z,
+      "DoB": "1980-01-01T06:00:00.000Z",
       "gender": "M",
       "graduatingYear": "2023",
       "major": "Computer Science",
